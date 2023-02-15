@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://allfont.ru/allfont.css?fonts=garamond" rel="stylesheet" type="text/css" />
+    <title>Wild Flower</title>
+</head>
+<body>
+    <div id="bg"></div>
+    <header class="header-wrapper">
+        <div class="menu-button-container">
+            <img src="/resources/menu.png" alt="" class="menu-button" onclick="openMenu()">
+        </div>
+        <a href="#"><img src="/resources/logo.png" alt="" class="logo"></a>
+        <nav class="navbar">
+            <a href="" class="nav-link half-a-border-on-top">Букеты</a>
+            <a href="" class="nav-link half-a-border-on-top">Отзывы</a>
+            <a href="" class="nav-link half-a-border-on-top">Доставка и оплата</a>
+            <a href="" class="nav-link half-a-border-on-top">Контакты</a>
+        </nav>
+        <div class="contact">
+            <a href="tel:+7 (960) 210-22-33" title="Позвони нам!"><img style="height: 20px; width: 20px;" src="/resources/icon-call.png" alt=""><span class="phonenumber">+7 (960) 210-22-33</span></a>
+        </div>
+    </header>
+        <main class="main-wrapper">
+            <div class="block-1">
+                <div class="content-left">
+                    <h1>Цветы для самых любимых</h1>
+                    <p class="subtitle">Каждый день мы создаем новую композицию из свежих, сезонных цветов</p>
+                    <a href="#" id="openModal" class="button" onclick="openModal()"><span style="width: 100%;">Заказать сейчас</span></a>
+                </div>
+                <div class="content-right">
+                    <img style="height: 460px; width: 337px;" src="/resources/main-image.png" alt="">
+                </div>
+                <div class="content-socials">
+                    <a href=""><img src="/resources/twitter.png" alt="twitter logo" class="socials-icon" title="Twitter"></a>
+                    <a href=""><img src="/resources/pinterest.png" alt="pinterest logo" class="socials-icon" title="Pinterest"></a>
+                    <a href=""><img src="/resources/YouTube.png" alt="youtube logo" class="socials-icon" title="Youtube"></a>
+                    <a href=""><img src="/resources/Facebook.png" alt="facebook logo" class="socials-icon" title="Facebook"></a>
+                </div>
+            </div>
+            <div class="block-2">
+                <div class="border-top"></div>
+                <div class="heading">
+                    <span class="block-2-heading">5 шагов к авторскому букету</span>
+                </div>
+                <div class="track-list">
+                    <div class="list-item">
+                        <div class="item-img">
+                            <img src="/resources/1.png" alt="" class="item-image">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Заказ</div>
+                            <div class="item-subtitle">Выберите букет и оформите заказ</div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-img">
+                            <img src="/resources/5.png" alt="" class="item-image">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Детали</div>
+                            <div class="item-subtitle">Мы вам перезвоним в течение 10 минут и уточним детали</div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-img">
+                            <img src="/resources/3.png" alt="" class="item-image">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Оплата</div>
+                            <div class="item-subtitle">Оплатите онлайн или при получении</div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-img">
+                            <img src="/resources/4.png" alt="" class="item-image">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Сборка и упаковка</div>
+                            <div class="item-subtitle">Собререм букет с учетом ваших пожеланий и упакуем для доставки</div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-img">
+                            <img src="/resources/2.png" alt="" class="item-image">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Доставка</div>
+                            <div class="item-subtitle">Курьер позвонит за час и доставит букет во время</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal-wrapper" id="modal">
+            <div class="modal">
+            <a href="#" title="Close" class="close"><img src="resources/close.png" alt="" onclick="closeModal()"></a>
+            <h3>Обратный звонок</h3>
+            <fieldset>
+                <label for="input-name">*Имя</label>
+                <input id="input-name" name="input-name" type="text" placeholder="Введите ваше имя" required>
+            </fieldset>
+            <fieldset>
+                <label for="input-number">*Телефон</label>
+                <input id="input-number" name="input-number" type="number" max="13" placeholder="Введите ваш номер" required>
+                <p>*Нажимия кнопку “Оставить заявку” я даю согласие на обработку данных </p>
+           </fieldset>
+           <a href="" class="button">Отправить заявку</a>
+        </div>
+    </div>
+    <div class="nav-wrapper" id="nav-mobile">
+        <div class="nav-mobile">
+            <a href="#" title="Close" class="close-nav"><img src="resources/close.png" alt="" onclick="closeMenu()"></a>
+        <a href="#"><img src="/resources/white-logo.png" alt="" class="logo"></a>
+        <nav class="nav-links">
+            <a href="#">Букеты</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Доставка и оплата</a>      
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="navbar-socials">
+            <a href=""><img src="/resources/white (2).png" alt="twitter logo" class="socials-icon"></a>
+            <a href=""><img src="/resources/white (1).png" alt="pinterest logo" class="socials-icon"></a>
+            <a href=""><img src="/resources/white (3).png" alt="youtube logo" class="socials-icon"></a>
+            <a href=""><img src="/resources/white (4).png" alt="facebook logo" class="socials-icon"></a>
+        </div>
+    </div>
+</div>
+        <script src="/script.js"></script>
+    </body>
+</html>
